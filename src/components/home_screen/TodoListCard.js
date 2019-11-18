@@ -6,8 +6,6 @@ class TodoListCard extends React.Component {
         this.props.handleRegister(todoList.id);
     }
 
-    //
-
     render() {
         const { todoList } = this.props;
         return (
