@@ -19,7 +19,7 @@ import DatabaseTester from './test/DatabaseTester';
 class App extends Component {
   render() {
     const { auth } = this.props;
-
+    //
     // if auth is loaded then we render App.
     // But if not then we doesn't render the one.
     if (auth.isLoaded) {
