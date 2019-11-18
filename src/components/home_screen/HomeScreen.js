@@ -73,5 +73,3 @@ export default compose(
       { collection : 'todoLists' , orderBy: ['time', 'desc'] },
     ]),
 )(HomeScreen);
-
-// collection : 'todoLists' , orderBy: ['time', 'desc']  
