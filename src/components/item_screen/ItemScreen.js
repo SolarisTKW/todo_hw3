@@ -5,15 +5,23 @@ import { NavLink, Redirect } from 'react-router-dom';
 import { firestoreConnect } from 'react-redux-firebase';
 import { getFirestore } from 'redux-firestore';
 import {FormInput} from 'shards-react';
-import {DatePicker} from 'shards-react';
+import {DatePicker} from 'react-materialize';
 
 class ItemScreen extends Component {
 
 state = {
     description: "",
     assigned_to: "",
-    due_date: "",
+    duedate: "",
     completed: false,
+}
+
+handleDate = (e) => {
+    const { target } = e;
+    this.setState(state => ({
+        ...state,
+        [target.id]: target.value,
+    }));
 }
 
 handleChange = (e) => {
@@ -43,8 +51,8 @@ handleSubmit = (e) => {
         todoItem.description = this.state.description;
     if(this.state.assigned_to !== "")
         todoItem.assigned_to = this.state.assigned_to;
-    if(this.state.due_date !== "")
-        todoItem.due_date = this.state.due_date;
+    if(this.state.duedate !== "")
+        todoItem.due_date = this.state.duedate;
     todoItem.completed = this.state.completed;
     
     this.props.todoList.items[this.props.todoItem.key] = todoItem;
@@ -55,6 +63,7 @@ handleSubmit = (e) => {
     todoList.set({
         name: this.props.todoList.name,
         owner: this.props.todoList.owner,
+        time: this.props.todoList.time,
         items: this.props.todoList.items,
     });
 
@@ -87,7 +96,7 @@ handleSubmit = (e) => {
 
                         <div className="row white">
                             <label htmlFor="due_date">Due Date</label>
-                            <FormInput type="date" className="validate" name="duedate" id="duedate" defaultValue={todoItem.due_date} onChange={this.handleChange}/>
+                            <FormInput type="date" className="validate" name="duedate" id="duedate" defaultValue={todoItem.due_date} onChange={this.handleDate}/>
                         </div>
 
                         <div className="row white">
