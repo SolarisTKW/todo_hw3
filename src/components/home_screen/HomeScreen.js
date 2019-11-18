@@ -7,7 +7,6 @@ import TodoListLinks from './TodoListLinks'
 import { getFirestore } from 'redux-firestore';
 
 class HomeScreen extends Component {
-
     
 registerRecent = (id) => {
     const fireStore = getFirestore();
