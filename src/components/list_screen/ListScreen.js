@@ -45,7 +45,7 @@ class ListScreen extends Component {
         }
 
     }
-
+    //
     handleClick = (e) => {
         const fireStore  = getFirestore();
 
