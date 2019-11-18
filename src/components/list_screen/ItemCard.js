@@ -1,11 +1,4 @@
 import React from 'react';
-import {
-    Dropdown,
-    DropdownToggle,
-    DropdownMenu,
-    DropdownItem
-  } from "shards-react";
-
 import{ Button, Icon } from 'react-materialize';
 
 class ItemCard extends React.Component {

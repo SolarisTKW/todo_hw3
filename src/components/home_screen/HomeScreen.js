@@ -14,18 +14,21 @@ state = {
 registerRecent = (id) => {
     const fireStore = getFirestore();
     const collection = fireStore.collection('todoLists').doc(id);
+    const x = new Date();
+
     collection.update({
-        time: new Date()
+        time: x.getTime()
     })
 }
 
 handleNewList = () => {
     const fireStore = getFirestore();
     const collection = fireStore.collection('todoLists');
+    const x = new Date();
     collection.add({
         name: "Unnamed",
         owner: "No owner",
-        time: new Date(),
+        time: x.getTime(),
         items: [],
     });
 }
@@ -70,7 +73,7 @@ const mapStateToProps = (state) => {
 export default compose(
     connect(mapStateToProps),
     firestoreConnect([
-      { collection: 'todoLists' },
+      { collection : 'todoLists' , orderBy: ['time', 'desc'] },
     ]),
 )(HomeScreen);
 

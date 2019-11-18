@@ -30,6 +30,7 @@ class ListScreen extends Component {
             fireStore.collection('todoLists').doc(this.props.todoList.id).set({
                 name: target.value,
                 owner: this.props.todoList.owner,
+                time: this.props.todoList.time,
                 items: this.props.todoList.items
             });
         }
@@ -38,6 +39,7 @@ class ListScreen extends Component {
             fireStore.collection('todoLists').doc(this.props.todoList.id).set({
                 name: this.props.todoList.name,
                 owner: target.value,
+                time: this.props.todoList.time,
                 items: this.props.todoList.items
             });
         }
@@ -60,6 +62,7 @@ class ListScreen extends Component {
         fireStore.collection('todoLists').doc(this.props.todoList.id).set({
             name: this.props.todoList.name,
             owner: this.props.todoList.owner,
+            time: this.props.todoList.time,
             items: this.props.todoList.items,
         });
     }
@@ -110,6 +113,7 @@ class ListScreen extends Component {
         fireStore.collection('todoLists').doc(this.props.todoList.id).set({
             name: this.props.todoList.name,
             owner: this.props.todoList.owner,
+            time: this.props.todoList.time,
             items: newItems
         });
     }
@@ -196,6 +200,7 @@ class ListScreen extends Component {
         fireStore.collection('todoLists').doc(this.props.todoList.id).set({
             name: this.props.todoList.name,
             owner: this.props.todoList.owner,
+            time: this.props.todoList.time,
             items: list.items
         });
     }
@@ -225,6 +230,7 @@ class ListScreen extends Component {
         fireStore.collection('todoLists').doc(this.props.todoList.id).set({
             name: this.props.todoList.name,
             owner: this.props.todoList.owner,
+            time: this.props.todoList.time,
             items: newItems,
         });
     }
