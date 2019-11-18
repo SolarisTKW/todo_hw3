@@ -5,7 +5,7 @@ import * as actionCreators from '../actions/actionCreators'
 // AND RETURN THE NEW, UPDATED STATE
 
 const initState = {};
-
+//
 const authReducer = (state = initState, action) => {
   switch (action.type) {
     case actionCreators.LOGIN_ERROR:

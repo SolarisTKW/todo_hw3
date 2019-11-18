@@ -14,7 +14,7 @@ class ListScreen extends Component {
         owner: '',
         criteria: "",
     }
-
+    //
     handleChange = (e) => {
         const fireStore  = getFirestore();
 

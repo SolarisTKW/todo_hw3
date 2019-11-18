@@ -4,7 +4,7 @@ import todoJson from './TestTodoListData.json'
 import { getFirestore } from 'redux-firestore';
 
 class DatabaseTester extends React.Component {
-
+    //
     // NOTE, BY KEEPING THE DATABASE PUBLIC YOU CAN
     // DO THIS ANY TIME YOU LIKE WITHOUT HAVING
     // TO LOG IN

@@ -11,7 +11,7 @@ class LoginScreen extends Component {
     email: '',
     password: '',
   }
-
+  //
   handleChange = (e) => {
     const { target } = e;
 

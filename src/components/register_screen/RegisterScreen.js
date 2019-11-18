@@ -6,6 +6,7 @@ import { Redirect } from 'react-router-dom';
 import { registerHandler } from '../../store/database/asynchHandler'
 
 class RegisterScreen extends Component {
+  //
   state = {
     email: '',
     password: '',

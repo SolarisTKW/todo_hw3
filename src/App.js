@@ -16,7 +16,6 @@ import ListScreen from './components/list_screen/ListScreen.js';
 import ItemScreen from './components/item_screen/ItemScreen.js';
 import DatabaseTester from './test/DatabaseTester';
 
-
 class App extends Component {
   render() {
     const { auth } = this.props;

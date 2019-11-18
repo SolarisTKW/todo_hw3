@@ -17,7 +17,7 @@ export const logoutHandler = (firebase) => (dispatch, getState) => {
         dispatch(actionCreators.logoutSuccess);
     });
 };
-
+//
 export const registerHandler = (newUser, firebase) => (dispatch, getState, { getFirestore }) => {
     const firestore = getFirestore();
     firebase.auth().createUserWithEmailAndPassword(

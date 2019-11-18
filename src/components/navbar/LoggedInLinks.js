@@ -12,7 +12,7 @@ class LoggedInLinks extends React.Component {
     const { firebase } = this.props;
     this.props.signOut(firebase);
   }
-
+  //
   render() {
     const { profile } = this.props;
     return (

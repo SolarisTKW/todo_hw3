@@ -5,6 +5,7 @@ import authReducer from './authReducer';
 import todoListReducer from './todoListReducer';
 
 const rootReducer = combineReducers({
+  //
   auth: authReducer,
   todoList: todoListReducer,
   firestore: firestoreReducer,

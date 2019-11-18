@@ -13,7 +13,7 @@ export const LOGIN_ERROR = 'LOGIN_ERROR';
 export const LOGOUT_SUCCESS = 'LOGOUT_SUCCESS';
 
 // THESE CREATORS MAKE ACTIONS ASSOCIATED WITH USER ACCOUNTS
-
+//
 export function registerSuccess() {
     return { type: 'REGISTER_SUCCESS' }
 };

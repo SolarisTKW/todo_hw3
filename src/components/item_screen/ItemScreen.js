@@ -9,6 +9,8 @@ import {DatePicker} from 'shards-react';
 
 class ItemScreen extends Component {
 
+    //
+    
 state = {
     description: "",
     assigned_to: "",

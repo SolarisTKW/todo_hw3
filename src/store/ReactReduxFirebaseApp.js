@@ -12,7 +12,7 @@ import App from '../App';
 class ReactReduxFirebaseApp extends React.Component {
     constructor(props) {
         super(props);
-
+        //
         // We enhance compose in order to use Redux DevTools extension
         // https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd
         const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;

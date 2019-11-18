@@ -11,6 +11,8 @@ class ItemCard extends React.Component {
         this.state = {dropdownOpen: false};
     }
 
+    //
+
     handleCompleted = () =>
     {   
         const {item} = this.props;
